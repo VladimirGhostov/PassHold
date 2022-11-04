@@ -3,8 +3,13 @@
   "ProjectMap": {
     "3d074c50-1521-4cc1-89ba-047ac8dd0546": {
       "ProjectGuid": "3d074c50-1521-4cc1-89ba-047ac8dd0546",
-      "DisplayName": "ConsoleApp2",
+      "DisplayName": "PassHoldApp",
       "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Прочие файлы",
+      "ColorIndex": -1
     }
   },
   "NextColorIndex": 1

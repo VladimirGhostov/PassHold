@@ -27,13 +27,13 @@ static class Login
     }
     public static void Enter()
     {
-        //объявление переменных в функции
+        //Объявление переменных в функции
         string path = "Data";
         string? log = "";
         string? pas = "";
         string? password = "";
         string? login = "";
-        //объявление переменных для сравнения хэшей
+        //Объявление переменных для сравнения хэшей
         int hash_log = 0;
         int hash_pas = 0;
         int hash_ent_log = 0;
@@ -48,7 +48,7 @@ static class Login
             reader.Close(); //Закрываем
         }
 
-    first:   //метка для запуска заново 
+    first:   //Метка для запуска заново 
         Console.WriteLine("Введите логин: "); //Запрашиваем логин
             login = Console.ReadLine(); //Считываем логин
             hash_ent_log = String.GetHashCode(login); //Получаем хэш
@@ -69,7 +69,7 @@ static class Login
             Console.WriteLine("Ты долбаёб");
             Thread.Sleep(1000);
             Console.Clear();
-            goto first;
+            goto first; //Переходим к метке
         }
 
     }
