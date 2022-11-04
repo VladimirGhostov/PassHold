@@ -48,7 +48,7 @@ static class Login
             reader.Close(); //Закрываем
         }
 
-        Console.Beep();
+        //Console.Beep();
         Console.WriteLine("Загрузка приложения, подождите...");
         Thread.Sleep(1500);
 
@@ -78,4 +78,5 @@ static class Login
         }
 
     }
+
 }

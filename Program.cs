@@ -13,6 +13,10 @@ namespace PassHold
     {
         static void Main(string[] args)
         {
+            Console.ForegroundColor = ConsoleColor.Green;
+
+            bool del_file = false;
+
             Login.FileCreate();
             Login.Enter();
 
@@ -21,17 +25,26 @@ namespace PassHold
 
             Console.WriteLine("Добро пожаловать в менеджер паролей v0.1");
             Console.WriteLine("");
+        menu:
             Console.WriteLine("Выберите пункт меню.");
+            //Console.WriteLine("0.Инициализация базы данных");
             Console.WriteLine("1.Создание базы данных с паролями");
             Console.WriteLine("2.Ввести данные для базы данных");
             Console.WriteLine("3.Посмотреть пароли");
+            Console.WriteLine("4.Удалить базу данных");
 
             int menu = Convert.ToInt32(Console.ReadLine());
 
             switch (menu)
             {
-                case 1: 
-                    CreateTable.CrTable(sqlite_conn); //Создание DataBase\
+                case 1:
+                    Console.Clear();
+                    Console.WriteLine("Ожидайте, создаётся база данных");
+                    Thread.Sleep(1000);
+                    CreateTable.CrTable(sqlite_conn); //Создание DataBase
+                    Console.WriteLine("База данных успешно создана.");
+                    Console.WriteLine("Возвращаем Вас в главное меню");
+                    goto menu;
                     break;
 
                 case 2:
@@ -40,10 +53,26 @@ namespace PassHold
                     string login = Console.ReadLine();
                     string pass = Console.ReadLine();
                     InsertData.InsData(sqlite_conn, pass, id, login); //Ввод данных в Data Base
+                    goto menu;
                     break;
 
                 case 3:
+                    Console.Clear();
                     ReadData.RdData(sqlite_conn); //Вывод данных из Data Base
+                    break;
+
+                case 4:
+                    Console.Clear();
+                    Console.WriteLine("Это действие удалит ВСЕ ДАННЫЕ, Вы уверенны?");
+                    Console.WriteLine("1.Да");
+                    Console.WriteLine("0.Нет");
+                    /*bool answer = Convert.ToBoolean(Console.ReadLine());
+                if (answer == true)
+                {
+                    System.IO.File.Delete("database.db");
+                }
+                else */
+                    goto menu;
                     break;
             }
 

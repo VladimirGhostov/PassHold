@@ -17,12 +17,13 @@ namespace PassHoldApp
             sqlite_datareader = sqlite_cmd.ExecuteReader();
             while (sqlite_datareader.Read())
             {
-                //string myreader = sqlite_datareader.GetString(0);
-                //Console.WriteLine(myreader);
-                for (int i = 0; i < 3; i++)
+                string myreader = sqlite_datareader.GetString(0);
+                Console.WriteLine(myreader);
+                /*for (int i = 0; i < 3; i++)
                 {
-                    Console.Write(sqlite_datareader.GetString(i));
-                }
+                    string line = sqlite_datareader.GetString(i);
+                    Console.Write(line);
+                }*/
             }
             conn.Close();
         }
