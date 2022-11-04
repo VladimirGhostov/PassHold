@@ -21,7 +21,7 @@ namespace PassHoldApp
                 //Console.WriteLine(myreader);
                 for (int i = 0; i < 3; i++)
                 {
-                    Console.WriteLine(sqlite_datareader.GetString(i));
+                    Console.Write(sqlite_datareader.GetString(i));
                 }
             }
             conn.Close();

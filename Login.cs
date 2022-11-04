@@ -48,6 +48,10 @@ static class Login
             reader.Close(); //Закрываем
         }
 
+        Console.Beep();
+        Console.WriteLine("Загрузка приложения, подождите...");
+        Thread.Sleep(1500);
+
     first:   //Метка для запуска заново 
         Console.WriteLine("Введите логин: "); //Запрашиваем логин
             login = Console.ReadLine(); //Считываем логин
@@ -60,14 +64,15 @@ static class Login
 
         if ((hash_log == hash_ent_log) & (hash_pas == hash_ent_pas)) //Сравниваем хэши
         {
-            Console.WriteLine("Ok");
+            Console.WriteLine("Вход успешный!");
             Thread.Sleep(1000);
             Console.Clear();
         }
         else //Если неудача, то запрашиваем всё заново
         {
-            Console.WriteLine("Ты долбаёб");
-            Thread.Sleep(1000);
+            Console.WriteLine("Неверный логин или пароль, повторите ввод");
+            Console.WriteLine("Нажмите для продолжения...");
+            Console.ReadKey();
             Console.Clear();
             goto first; //Переходим к метке
         }
