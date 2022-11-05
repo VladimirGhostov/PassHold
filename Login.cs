@@ -9,21 +9,32 @@ static class Login
         string data = "Data"; //Название и путь к файлу
 
         bool file_exist = false; //Переменная для проверки
+        string log = "";
+        string pas = "";
 
-        if (!File.Exists(data))
+        if (File.Exists(data))
         {
-            file_exist = false;
+            file_exist = true;
         }
-        using StreamWriter writer = new StreamWriter(data, false); //Запись файла по пути DATA. False - перезапись файла, true - дописать в файл
-        if (!file_exist) //Если файл НЕ существует
+        if (file_exist == false) //Если файл НЕ существует
         {
-            writer.WriteLine("admin"); //Пишет в первую строку файла логин
-            writer.WriteLine("888"); //Пишет во вторую строку файла пароль
+            using StreamWriter writer = new StreamWriter(data, false); //Запись файла по пути DATA. False - перезапись файла, true - дописать в файлaaaaaaaaaa
+            Console.Clear();
+            Console.WriteLine("Введите данные для входа в приложение");
+            Console.WriteLine();
+            Console.WriteLine("Логин: ");
+                log = Console.ReadLine();
+            Console.WriteLine("Пароль: ");
+                pas = Console.ReadLine();
+
+            writer.WriteLine(log); //Пишет в первую строку файла логин
+            writer.WriteLine(pas); //Пишет во вторую строку файла пароль
+            writer.Close();
         }
-        else
+        /*else //Если файл существует
         {
             writer.Close(); //Шоб память не съебалась, прекращаем запись
-        }
+        }*/
     }
     public static void Enter()
     {

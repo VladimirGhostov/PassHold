@@ -31,7 +31,7 @@ namespace PassHold
             Console.WriteLine("1.Создание базы данных с паролями");
             Console.WriteLine("2.Ввести данные для базы данных");
             Console.WriteLine("3.Посмотреть пароли");
-            Console.WriteLine("4.Удалить базу данных");
+            Console.WriteLine("4.Удалить значение из базы данных");
 
             int menu = Convert.ToInt32(Console.ReadLine());
 
@@ -54,7 +54,6 @@ namespace PassHold
                     string pass = Console.ReadLine();
                     InsertData.InsData(sqlite_conn, pass, id, login); //Ввод данных в Data Base
                     goto menu;
-                    break;
 
                 case 3:
                     Console.Clear();
@@ -66,14 +65,11 @@ namespace PassHold
                     Console.WriteLine("Это действие удалит ВСЕ ДАННЫЕ, Вы уверенны?");
                     Console.WriteLine("1.Да");
                     Console.WriteLine("0.Нет");
-                    /*bool answer = Convert.ToBoolean(Console.ReadLine());
-                if (answer == true)
-                {
-                    System.IO.File.Delete("database.db");
-                }
-                else */
+                    Console.Clear();
+                    Console.WriteLine("Введите Id, который необходимо удалить: ");
+                    string Id = Console.ReadLine();
+                    DeleteData.DelData(sqlite_conn, Id);
                     goto menu;
-                    break;
             }
 
             
