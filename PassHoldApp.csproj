@@ -2,10 +2,30 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net6.0-windows</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <StartupObject>PassHold.Program</StartupObject>
+    <ApplicationIcon>safe.ico</ApplicationIcon>
+    <IsPublishable>False</IsPublishable>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>portable</DebugType>
+    <SignAssembly>False</SignAssembly>
+    <Authors>Ghostov</Authors>
+    <PackageIcon>safe.png</PackageIcon>
+    <NeutralLanguage>ru-RU</NeutralLanguage>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="safe.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\Downloads\safe.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="System.Data.SQLite.Core" Version="1.0.116" />

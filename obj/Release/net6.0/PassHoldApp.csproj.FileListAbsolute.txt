@@ -18,3 +18,4 @@ C:\Users\User\Desktop\Код VS\ConsoleApp2\obj\Release\net6.0\PassHoldApp.dll
 C:\Users\User\Desktop\Код VS\ConsoleApp2\obj\Release\net6.0\ref\PassHoldApp.dll
 C:\Users\User\Desktop\Код VS\ConsoleApp2\obj\Release\net6.0\PassHoldApp.pdb
 C:\Users\User\Desktop\Код VS\ConsoleApp2\obj\Release\net6.0\PassHoldApp.genruntimeconfig.cache
+C:\Users\User\Desktop\Код VS\ConsoleApp2\obj\Release\net6.0\PassHoldApp.csproj.AssemblyReference.cache

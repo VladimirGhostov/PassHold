@@ -1,0 +1,6 @@
+C:\Users\User\Desktop\Код VS\ConsoleApp2\obj\Release\net472\PassHoldApp.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\Код VS\ConsoleApp2\obj\Release\net472\PassHoldApp.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\Desktop\Код VS\ConsoleApp2\obj\Release\net472\PassHoldApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\Код VS\ConsoleApp2\obj\Release\net472\PassHoldApp.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\Код VS\ConsoleApp2\obj\Release\net472\PassHoldApp.AssemblyInfo.cs
+C:\Users\User\Desktop\Код VS\ConsoleApp2\obj\Release\net472\PassHoldApp.csproj.CoreCompileInputs.cache

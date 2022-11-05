@@ -1,0 +1,10 @@
+C:\Users\User\Desktop\Код VS\ConsoleApp2\bin\Release\net6.0-windows\publish\PassHoldApp.exe
+C:\Users\User\Desktop\Код VS\ConsoleApp2\bin\Release\net6.0-windows\publish\PassHoldApp.dll
+C:\Users\User\Desktop\Код VS\ConsoleApp2\bin\Release\net6.0-windows\publish\PassHoldApp.deps.json
+C:\Users\User\Desktop\Код VS\ConsoleApp2\bin\Release\net6.0-windows\publish\PassHoldApp.runtimeconfig.json
+C:\Users\User\Desktop\Код VS\ConsoleApp2\bin\Release\net6.0-windows\publish\PassHoldApp.pdb
+C:\Users\User\Desktop\Код VS\ConsoleApp2\bin\Release\net6.0-windows\publish\System.Data.SQLite.dll
+C:\Users\User\Desktop\Код VS\ConsoleApp2\bin\Release\net6.0-windows\publish\runtimes\linux-x64\native\SQLite.Interop.dll
+C:\Users\User\Desktop\Код VS\ConsoleApp2\bin\Release\net6.0-windows\publish\runtimes\osx-x64\native\SQLite.Interop.dll
+C:\Users\User\Desktop\Код VS\ConsoleApp2\bin\Release\net6.0-windows\publish\runtimes\win-x64\native\SQLite.Interop.dll
+C:\Users\User\Desktop\Код VS\ConsoleApp2\bin\Release\net6.0-windows\publish\runtimes\win-x86\native\SQLite.Interop.dll

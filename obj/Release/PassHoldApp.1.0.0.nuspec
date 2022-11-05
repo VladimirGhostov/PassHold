@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>PassHoldApp</id>
+    <version>1.0.0</version>
+    <authors>Ghostov</authors>
+    <icon>safe.png</icon>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net6.0-windows10.0.22000">
+        <dependency id="System.Data.SQLite.Core" version="1.0.116" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <contentFiles>
+      <files include="any/net6.0-windows10.0.22000/safe.ico" buildAction="Content" />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="C:\Users\User\Desktop\Код VS\ConsoleApp2\bin\Release\net6.0-windows10.0.22000.0\PassHoldApp.runtimeconfig.json" target="lib\net6.0-windows10.0.22000\PassHoldApp.runtimeconfig.json" />
+    <file src="C:\Users\User\Desktop\Код VS\ConsoleApp2\bin\Release\net6.0-windows10.0.22000.0\PassHoldApp.dll" target="lib\net6.0-windows10.0.22000\PassHoldApp.dll" />
+    <file src="C:\Users\User\Desktop\Код VS\ConsoleApp2\safe.ico" target="content\safe.ico" />
+    <file src="C:\Users\User\Desktop\Код VS\ConsoleApp2\safe.ico" target="contentFiles\any\net6.0-windows10.0.22000\safe.ico" />
+    <file src="C:\Users\User\Downloads\safe.png" target="\safe.png" />
+  </files>
+</package>

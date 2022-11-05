@@ -19,6 +19,8 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyTitleAttribute("PassHoldApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 [assembly: System.Resources.NeutralResourcesLanguageAttribute("ru-RU")]
+[assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows10.0.22000.0")]
+[assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows7.0")]
 
 // Создано классом WriteCodeFragment MSBuild.
 
