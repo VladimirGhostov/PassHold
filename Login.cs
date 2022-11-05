@@ -22,9 +22,9 @@ static class Login
             Console.Clear();
             Console.WriteLine("Введите данные для входа в приложение");
             Console.WriteLine();
-            Console.WriteLine("Логин: ");
+            Console.Write("Логин: ");
                 log = Console.ReadLine();
-            Console.WriteLine("Пароль: ");
+            Console.Write("Пароль: ");
                 pas = Console.ReadLine();
 
             writer.WriteLine(log); //Пишет в первую строку файла логин
@@ -60,14 +60,15 @@ static class Login
         }
 
         //Console.Beep();
+        Console.Clear();
         Console.WriteLine("Загрузка приложения, подождите...");
         Thread.Sleep(1500);
 
     first:   //Метка для запуска заново 
-        Console.WriteLine("Введите логин: "); //Запрашиваем логин
+        Console.Write("Введите логин: "); //Запрашиваем логин
             login = Console.ReadLine(); //Считываем логин
             hash_ent_log = String.GetHashCode(login); //Получаем хэш
-        Console.WriteLine("Введите пароль: "); //Запрашиваем пароль
+        Console.Write("Введите пароль: "); //Запрашиваем пароль
             password = Console.ReadLine(); //Считываем пароль
             hash_ent_pas = String.GetHashCode(password); //Получаем хэш
 

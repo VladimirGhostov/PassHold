@@ -18,7 +18,6 @@ namespace PassHoldApp
 
                 Console.WriteLine("Объект удалён");
             }
-            //Console.Read();
         }
     }
 }
